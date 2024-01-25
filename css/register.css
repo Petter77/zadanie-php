@@ -1,0 +1,86 @@
+form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-input, select {
+    width: 100%;
+    background: #374151;
+    height: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+
+.form-input:hover, select:hover {
+    background: #263040;
+    transition: .1s background;
+}
+
+.form-input:focus {
+    outline: #2563eb 1px solid;
+    transition: .5s outline;
+}
+
+#date {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    column-gap: 15px;
+}
+
+.date-element {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+input[type=submit] {
+    background: #2563eb;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background: #1d4ed8;
+    transition: .1s background;
+}
+
+#registerSuccess, #loginFailed {
+    color: #000000;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#registerSuccess {
+    background: #c1fca0;
+    border: 3px solid #4eb90e;
+    margin-top: 40px;
+}
+
+#loginFailed {
+    margin-top: 40px;
+    background: #ffa8a8;
+    border: 3px solid #d70f0f;
+
+}
